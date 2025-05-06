@@ -1,0 +1,186 @@
+[
+  {
+    "id": "app001",
+    "name": "Programming Hero",
+    "developer": "Programming Hero Ltd.",
+    "thumbnail": "https://i.ibb.co.com/PvmtTXdy/fotis-fotopoulos-6s-Al6a-Q4-OWI-unsplash.jpg",
+    "banner": "https://i.ibb.co/vj5rT68/programming-hero-banner.jpg",
+    "downloads": 3500000,
+    "category": "Education",
+    "rating": 4.8,
+    "description": "Programming Hero is a fun and interactive way to learn programming. Whether you're a beginner or looking to brush up your skills, this app makes learning to code exciting and practical.",
+    "features": [
+      "Interactive coding lessons",
+      "Real-world projects",
+      "Gamified learning experience"
+    ],
+    "reviews": [
+      {
+        "user": "coder_nadia",
+        "rating": 5,
+        "comment": "Best app for beginners! The lessons are super easy to follow and engaging."
+      }
+    ]
+  },
+  {
+    "id": "app002",
+    "name": "Duolingo",
+    "developer": "Duolingo Inc.",
+    "thumbnail": "https://i.ibb.co.com/4wqcwkNv/ilgmyzin-m-SIFEZ8-WW1-M-unsplash.jpg",
+    "banner": "https://i.ibb.co/Y8fPQxP/duolingo-banner.jpg",
+    "downloads": 50000000,
+    "category": "Education",
+    "rating": 4.7,
+    "description": "Learn over 30 languages with bite-sized lessons and gamified learning that makes studying fun.",
+    "features": [
+      "Gamified language lessons",
+      "Daily practice streaks",
+      "Speech and writing exercises"
+    ],
+    "reviews": [
+      {
+        "user": "polyglot_girl",
+        "rating": 5,
+        "comment": "Fantastic app! Learning Spanish has never been this fun."
+      }
+    ]
+  },
+  {
+    "id": "app003",
+    "name": "Focus Keeper",
+    "developer": "Pomodoro Labs",
+    "thumbnail": "https://i.ibb.co.com/SDd26Kd9/paul-skorupskas-7-KLa-x-Lb-SXA-unsplash.jpg",
+    "banner": "https://i.ibb.co/hY9HYR7/focus-keeper-banner.jpg",
+    "downloads": 1200000,
+    "category": "Productivity",
+    "rating": 4.6,
+    "description": "A Pomodoro timer app designed to boost your productivity and keep you focused throughout the day.",
+    "features": [
+      "Customizable focus sessions",
+      "Productivity reports",
+      "Simple and clean interface"
+    ],
+    "reviews": [
+      {
+        "user": "deepworker21",
+        "rating": 4,
+        "comment": "Great tool for managing time, but could use more themes."
+      }
+    ]
+  },
+  {
+    "id": "app004",
+    "name": "Trello",
+    "developer": "Atlassian",
+    "thumbnail": "https://i.ibb.co.com/d0NVxxHm/ryland-dean-6k6-N8-HTr-Xy-E-unsplash.jpg",
+    "banner": "https://i.ibb.co/YTqcCbY/trello-banner.jpg",
+    "downloads": 10000000,
+    "category": "Productivity",
+    "rating": 4.6,
+    "description": "Trello helps you organize tasks and collaborate using boards, lists, and cards.",
+    "features": [
+      "Drag-and-drop task management",
+      "Project templates",
+      "Team collaboration features"
+    ],
+    "reviews": [
+      {
+        "user": "planner_dude",
+        "rating": 4.5,
+        "comment": "Clean UI and super useful for tracking everything in one place."
+      }
+    ]
+  },
+  {
+    "id": "app005",
+    "name": "Subway Surfers",
+    "developer": "SYBO Games",
+    "thumbnail": "https://i.ibb.co/8s7xP8h/subway-thumb.jpg",
+    "banner": "https://i.ibb.co/JqS7nHD/subway-banner.jpg",
+    "downloads": 1000000000,
+    "category": "Gaming",
+    "rating": 4.5,
+    "description": "Dash as fast as you can, dodge the oncoming trains, and collect coins in this endless runner!",
+    "features": [
+      "Colorful HD graphics",
+      "Endless running gameplay",
+      "Unlockable characters and boards"
+    ],
+    "reviews": [
+      {
+        "user": "runnerzahid",
+        "rating": 5,
+        "comment": "Timeless classic! Still fun after all these years."
+      }
+    ]
+  },
+  {
+    "id": "app006",
+    "name": "Asana",
+    "developer": "Asana, Inc.",
+    "thumbnail": "https://i.ibb.co/fF8mpVf/asana-thumb.jpg",
+    "banner": "https://i.ibb.co/gzDTmv7/asana-banner.jpg",
+    "downloads": 8000000,
+    "category": "Productivity",
+    "rating": 4.5,
+    "description": "Manage team projects and tasks easily with Asana. Stay organized and collaborate efficiently.",
+    "features": [
+      "Task and project tracking",
+      "Calendar integration",
+      "Team collaboration tools"
+    ],
+    "reviews": [
+      {
+        "user": "teamlead_amy",
+        "rating": 4.5,
+        "comment": "It’s a life-saver for our remote team projects!"
+      }
+    ]
+  },
+  {
+    "id": "app007",
+    "name": "Clash of Clans",
+    "developer": "Supercell",
+    "thumbnail": "https://i.ibb.co/Vpyc3QG/coc-thumb.jpg",
+    "banner": "https://i.ibb.co/smwhnkZ/coc-banner.jpg",
+    "downloads": 100000000,
+    "category": "Gaming",
+    "rating": 4.4,
+    "description": "Build your village, raise a clan, and compete in epic Clan Wars!",
+    "features": [
+      "Online multiplayer battles",
+      "Clan creation and management",
+      "Frequent updates with new troops"
+    ],
+    "reviews": [
+      {
+        "user": "warriorx",
+        "rating": 5,
+        "comment": "Addictive game! Love building and battling."
+      }
+    ]
+  },
+  {
+    "id": "app008",
+    "name": "Kahoot!",
+    "developer": "Kahoot ASA",
+    "thumbnail": "https://i.ibb.co/2gLff2r/kahoot-thumb.jpg",
+    "banner": "https://i.ibb.co/9qHkshT/kahoot-banner.jpg",
+    "downloads": 20000000,
+    "category": "Education",
+    "rating": 4.3,
+    "description": "Create and participate in fun and interactive quizzes for classrooms, work, or just fun learning.",
+    "features": [
+      "Custom quiz creation",
+      "Live multiplayer mode",
+      "Leaderboards and scoring"
+    ],
+    "reviews": [
+      {
+        "user": "teacher_luke",
+        "rating": 4.2,
+        "comment": "Great for keeping students engaged!"
+      }
+    ]
+  }
+]
