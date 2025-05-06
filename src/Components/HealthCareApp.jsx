@@ -1,9 +1,8 @@
 import React from "react";
 
-const HighRated = ({ app }) => {
+const HealthCareApp = ({ app }) => {
   return (
     <div>
-      {/* trending apps */}
       <div className="card bg-base-100 shadow-sm mb-10">
         <figure>
           <img className="w-96 h-44" src={app.thumbnail} alt="Shoes" />
@@ -29,4 +28,4 @@ const HighRated = ({ app }) => {
   );
 };
 
-export default HighRated;
+export default HealthCareApp;

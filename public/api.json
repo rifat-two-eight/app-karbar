@@ -93,24 +93,24 @@
   },
   {
     "id": "app005",
-    "name": "Subway Surfers",
-    "developer": "SYBO Games",
-    "thumbnail": "https://i.ibb.co/8s7xP8h/subway-thumb.jpg",
-    "banner": "https://i.ibb.co/JqS7nHD/subway-banner.jpg",
-    "downloads": 1000000000,
-    "category": "Gaming",
+    "name": "HeartBeat Tracker",
+    "developer": "WellCare Tech",
+    "thumbnail": "https://i.ibb.co.com/VWyPJvhz/jair-lazaro-0lr-Jo37r6-Nk-unsplash.jpg",
+    "banner": "https://i.ibb.co/yy45Msh/health-banner1.jpg",
+    "downloads": 1000000,
+    "category": "Healthcare",
     "rating": 4.5,
-    "description": "Dash as fast as you can, dodge the oncoming trains, and collect coins in this endless runner!",
+    "description": "Monitor your heart rate in real time with our easy-to-use HeartBeat Tracker. Ideal for fitness and cardiac patients.",
     "features": [
-      "Colorful HD graphics",
-      "Endless running gameplay",
-      "Unlockable characters and boards"
+      "Real-time heart rate monitor",
+      "Health alerts and trends",
+      "Compatible with smartwatches"
     ],
     "reviews": [
       {
-        "user": "runnerzahid",
+        "user": "fitnurse22",
         "rating": 5,
-        "comment": "Timeless classic! Still fun after all these years."
+        "comment": "Accurate and helpful for tracking daily vitals!"
       }
     ]
   },
@@ -118,7 +118,7 @@
     "id": "app006",
     "name": "Asana",
     "developer": "Asana, Inc.",
-    "thumbnail": "https://i.ibb.co/fF8mpVf/asana-thumb.jpg",
+    "thumbnail": "https://i.ibb.co.com/MDGzGw8Z/imagine-buddy-b-TMTgg-Et5s4-unsplash.jpg",
     "banner": "https://i.ibb.co/gzDTmv7/asana-banner.jpg",
     "downloads": 8000000,
     "category": "Productivity",
@@ -139,24 +139,24 @@
   },
   {
     "id": "app007",
-    "name": "Clash of Clans",
-    "developer": "Supercell",
-    "thumbnail": "https://i.ibb.co/Vpyc3QG/coc-thumb.jpg",
-    "banner": "https://i.ibb.co/smwhnkZ/coc-banner.jpg",
-    "downloads": 100000000,
-    "category": "Gaming",
+    "name": "MindEase",
+    "developer": "ZenWell Inc.",
+    "thumbnail": "https://i.ibb.co.com/Y4w6yfY7/owen-beard-DK8j-Xx1-B-1c-unsplash.jpg",
+    "banner": "https://i.ibb.co/xqknvfp/health-banner2.jpg",
+    "downloads": 4000000,
+    "category": "Healthcare",
     "rating": 4.4,
-    "description": "Build your village, raise a clan, and compete in epic Clan Wars!",
+    "description": "MindEase helps you manage stress, anxiety, and sleep with guided meditations and breathing exercises.",
     "features": [
-      "Online multiplayer battles",
-      "Clan creation and management",
-      "Frequent updates with new troops"
+      "Breathing & meditation guides",
+      "Sleep aid programs",
+      "Mood tracking and journaling"
     ],
     "reviews": [
       {
-        "user": "warriorx",
-        "rating": 5,
-        "comment": "Addictive game! Love building and battling."
+        "user": "calmuser_jay",
+        "rating": 4.5,
+        "comment": "Great for winding down after a stressful day."
       }
     ]
   },
@@ -164,7 +164,7 @@
     "id": "app008",
     "name": "Kahoot!",
     "developer": "Kahoot ASA",
-    "thumbnail": "https://i.ibb.co/2gLff2r/kahoot-thumb.jpg",
+    "thumbnail": "https://i.ibb.co.com/FLLvKR21/tim-mossholder-WE-Kv-ZB1l0-unsplash.jpg",
     "banner": "https://i.ibb.co/9qHkshT/kahoot-banner.jpg",
     "downloads": 20000000,
     "category": "Education",

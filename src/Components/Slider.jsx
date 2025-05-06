@@ -5,13 +5,13 @@ const Slider = () => {
     <div>
       <div className="carousel w-full rounded-xl">
         <div id="item1" className="carousel-item w-full h-[70vh]">
-          <img src="./src/assets/slide1.jpg" className="w-full" />
+          <img src="./src/assets/slide3.jpg  " className="w-full" />
         </div>
         <div id="item2" className="carousel-item w-full h-[70vh]">
           <img src="./src/assets/slide2.jpg" className="w-full" />
         </div>
         <div id="item3" className="carousel-item w-full h-[70vh]">
-          <img src="./src/assets/slide3.jpg" className="w-full" />
+          <img src="./src/assets/slide1.jpg" className="w-full" />
         </div>
       </div>
       <div className="flex w-full justify-center gap-2 py-2">
