@@ -6,6 +6,8 @@ import Root from "./Layouts/Root";
 import Home from "./Components/Home";
 import Error from "./Components/Error";
 import AppDetails from "./Components/AppDetails";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
         path: "/appdetails/:id",
         loader: () => fetch("api.json"),
         Component: AppDetails,
+      },
+      {
+        path: "/login",
+        Component: Login,
+      },
+      {
+        path: "/register",
+        Component: Register,
       },
     ],
   },
