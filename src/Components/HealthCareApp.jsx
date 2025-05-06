@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const HealthCareApp = ({ app }) => {
   return (
@@ -18,9 +19,11 @@ const HealthCareApp = ({ app }) => {
               Total Downloads :{" "}
               <span className="text-gray-600"> {app.downloads}</span>
             </div>
-            <button className="bg-sky-500 px-3 py-2 text-white font-semibold rounded-xl mt-2 flex justify-self-end">
-              Details
-            </button>
+            <Link to={`/appdetails/${app.id}`}>
+              <button className="bg-sky-500 px-3 py-2 text-white font-semibold rounded-xl mt-2 flex cursor-pointer justify-self-end">
+                Details
+              </button>
+            </Link>
           </div>
         </div>
       </div>
