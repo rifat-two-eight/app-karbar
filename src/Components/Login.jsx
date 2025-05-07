@@ -1,9 +1,11 @@
 import React, { use } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "./AuthContext";
 import { GoogleAuthProvider } from "firebase/auth";
+import { toast, ToastContainer } from "react-toastify";
 
 const Login = () => {
+  const location = useLocation();
   const { signInUser, googleLogin } = use(AuthContext);
   const navigate = useNavigate();
   const handleLogin = (e) => {
@@ -13,9 +15,11 @@ const Login = () => {
     signInUser(email, password)
       .then((res) => {
         console.log(res.user);
-        navigate("/");
+        toast.success("Login successful!");
+        navigate(location?.state || "/");
       })
       .catch((error) => {
+        toast.error(error.message);
         console.log(error.message);
       });
   };
@@ -24,10 +28,12 @@ const Login = () => {
     googleLogin(googleProvider)
       .then((res) => {
         console.log(res.user);
+        toast.success("Logged in with Google!");
         navigate("/");
       })
       .catch((error) => {
         console.log(error.message);
+        toast.error(error.message);
       });
   };
   return (

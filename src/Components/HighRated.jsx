@@ -21,7 +21,7 @@ const HighRated = ({ app }) => {
               <span className="text-gray-600"> {app.downloads}</span>
             </div>
             <Link to={`/appdetails/${app.id}`}>
-              <button className="bg-sky-500 px-3 py-2 cursor-pointer text-white font-semibold rounded-xl mt-2 cursor-pointer flex justify-self-end">
+              <button className="bg-sky-500 px-3 py-2 cursor-pointer text-white font-semibold rounded-xl mt-2  flex justify-self-end">
                 Details
               </button>
             </Link>

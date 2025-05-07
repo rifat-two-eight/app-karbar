@@ -2,6 +2,7 @@ import React, { use } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "./AuthContext";
 import { GoogleAuthProvider } from "firebase/auth";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -10,13 +11,30 @@ const Register = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const uppercaseRegex = /[A-Z]/;
+    const lowercaseRegex = /[a-z]/;
+
+    if (password.length < 6) {
+      toast.error("Password must be at least 6 characters long.");
+      return;
+    }
+    if (!uppercaseRegex.test(password)) {
+      toast.error("Password must include at least one uppercase letter.");
+      return;
+    }
+    if (!lowercaseRegex.test(password)) {
+      toast.error("Password must include at least one lowercase letter.");
+      return;
+    }
     createUser(email, password)
       .then((res) => {
         console.log(res.user);
+        toast.success("Registered successful!");
         navigate("/");
       })
       .catch((error) => {
         console.log(error.message);
+        toast.error(error.message);
       });
   };
   const handleGoogleRegister = () => {
@@ -24,10 +42,12 @@ const Register = () => {
     googleLogin(googleProvider)
       .then((res) => {
         console.log(res.user);
+        toast.success("Registered with Google!");
         navigate("/");
       })
       .catch((error) => {
         console.log(error.message);
+        toast.error(error.message);
       });
   };
   return (
