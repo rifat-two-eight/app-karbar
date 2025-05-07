@@ -9,6 +9,7 @@ import AppDetails from "./Components/AppDetails";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
 import AuthProvider from "./Components/AuthProvider";
+import PrivateRoute from "./Components/PrivateRoute";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,7 +21,11 @@ const router = createBrowserRouter([
       {
         path: "/appdetails/:id",
         loader: () => fetch("api.json"),
-        Component: AppDetails,
+        element: (
+          <PrivateRoute>
+            <AppDetails></AppDetails>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",

@@ -1,9 +1,11 @@
 import React, { use } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "./AuthContext";
+import { GoogleAuthProvider } from "firebase/auth";
 
 const Register = () => {
-  const { createUser } = use(AuthContext);
+  const navigate = useNavigate();
+  const { createUser, googleLogin } = use(AuthContext);
   const handleRegister = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -11,6 +13,18 @@ const Register = () => {
     createUser(email, password)
       .then((res) => {
         console.log(res.user);
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
+  const handleGoogleRegister = () => {
+    const googleProvider = new GoogleAuthProvider();
+    googleLogin(googleProvider)
+      .then((res) => {
+        console.log(res.user);
+        navigate("/");
       })
       .catch((error) => {
         console.log(error.message);
@@ -97,8 +111,9 @@ const Register = () => {
         />
 
         <button
+          onClick={handleGoogleRegister}
           type="button"
-          className="w-full flex items-center justify-center gap-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 rounded-md transition duration-200"
+          className="w-full cursor-pointer flex items-center justify-center gap-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 rounded-md transition duration-200"
         >
           Sign Up with Google
         </button>

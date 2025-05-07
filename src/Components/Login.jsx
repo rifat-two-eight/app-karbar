@@ -1,9 +1,11 @@
 import React, { use } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "./AuthContext";
+import { GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
-  const { signInUser } = use(AuthContext);
+  const { signInUser, googleLogin } = use(AuthContext);
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -11,6 +13,18 @@ const Login = () => {
     signInUser(email, password)
       .then((res) => {
         console.log(res.user);
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
+  const handleGoogleLogin = () => {
+    const googleProvider = new GoogleAuthProvider();
+    googleLogin(googleProvider)
+      .then((res) => {
+        console.log(res.user);
+        navigate("/");
       })
       .catch((error) => {
         console.log(error.message);
@@ -71,6 +85,7 @@ const Login = () => {
           or
         </p>
         <button
+          onClick={handleGoogleLogin}
           type="button"
           className="w-full flex items-center justify-center gap-2 btn bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-md transition duration-200"
         >
