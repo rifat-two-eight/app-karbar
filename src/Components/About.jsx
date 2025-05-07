@@ -3,6 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <title>App KarBar | About</title>
       <div className="text-center mb-10">
         <h1 className="text-3xl sm:text-4xl font-bold text-blue-700 mb-3">
           About Our App Store

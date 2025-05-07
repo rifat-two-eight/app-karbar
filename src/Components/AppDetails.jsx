@@ -41,6 +41,7 @@ const AppDetails = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <title>App KarBar | Details</title>
       <div className="rounded-xl overflow-hidden shadow-md mb-6">
         <img
           src={app.banner}
