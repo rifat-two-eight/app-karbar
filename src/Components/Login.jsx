@@ -13,31 +13,28 @@ const Login = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     signInUser(email, password)
-      .then((res) => {
-        console.log(res.user);
+      .then(() => {
         toast.success("Login successful!");
         navigate(location?.state || "/");
       })
       .catch((error) => {
         toast.error(error.message);
-        console.log(error.message);
       });
   };
   const handleGoogleLogin = () => {
     const googleProvider = new GoogleAuthProvider();
     googleLogin(googleProvider)
-      .then((res) => {
-        console.log(res.user);
+      .then(() => {
         toast.success("Logged in with Google!");
-        navigate("/");
+        navigate(location?.state || "/");
       })
       .catch((error) => {
-        console.log(error.message);
         toast.error(error.message);
       });
   };
   return (
     <div>
+      <title>App KarBar | Login</title>
       <form
         onSubmit={handleLogin}
         className="max-w-2xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg space-y-5"

@@ -28,12 +28,10 @@ const Register = () => {
     }
     createUser(email, password)
       .then((res) => {
-        console.log(res.user);
         toast.success("Registered successful!");
         navigate("/");
       })
       .catch((error) => {
-        console.log(error.message);
         toast.error(error.message);
       });
   };
@@ -41,17 +39,16 @@ const Register = () => {
     const googleProvider = new GoogleAuthProvider();
     googleLogin(googleProvider)
       .then((res) => {
-        console.log(res.user);
         toast.success("Registered with Google!");
         navigate("/");
       })
       .catch((error) => {
-        console.log(error.message);
         toast.error(error.message);
       });
   };
   return (
     <div>
+      <title>App KarBar | Register</title>
       <form
         onSubmit={handleRegister}
         className="max-w-2xl mx-auto my-12 p-6 bg-white shadow-lg rounded-xl space-y-5"

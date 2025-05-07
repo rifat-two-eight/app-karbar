@@ -31,6 +31,14 @@ const Footer = () => {
               My Profile
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              className="hover:text-orange-400 transition duration-300"
+              to="/about"
+            >
+              About Us
+            </NavLink>
+          </li>
         </ul>
       </div>
 

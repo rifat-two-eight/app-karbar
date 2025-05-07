@@ -14,6 +14,7 @@ const Home = () => {
 
   return (
     <div>
+      <title>App KarBar | Home</title>
       <Slider></Slider>
       {/* high rating part */}
       <h2 className="text-center font-semibold text-3xl mt-8">Trending Apps</h2>

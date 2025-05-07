@@ -14,17 +14,19 @@ const Navbar = () => {
       <li>
         <NavLink to="/myprofile">My Profile</NavLink>
       </li>
+      <li>
+        <NavLink to="/about">About Us</NavLink>
+      </li>
     </>
   );
 
   const handleSignOut = () => {
     signOutUser()
       .then(() => {
-        console.log("signOut successful");
         toast.success("Signed out successfully!!");
       })
       .catch((error) => {
-        console.log(error.message);
+        toast.error(error.message);
       });
   };
   return (
@@ -72,14 +74,35 @@ const Navbar = () => {
       <div className="navbar-end">
         {user ? (
           <div className="flex gap-3 items-center">
-            <span>{user.email}</span>
-            <button onClick={handleSignOut} className="btn">
+            <span className="relative group inline-block">
+              {user.photoURL ? (
+                <>
+                  <img
+                    src={user.photoURL}
+                    alt="User Profile"
+                    className="w-8 h-8 rounded-full"
+                  />
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
+                    {user.displayName}
+                  </div>
+                </>
+              ) : (
+                user.email
+              )}
+            </span>
+
+            <button
+              onClick={handleSignOut}
+              className="bg-gray-600 px-4 py-2 cursor-pointer font-semibold hover:bg-gray-700 rounded-lg text-white"
+            >
               Sign Out
             </button>
           </div>
         ) : (
           <Link to="/login">
-            <button className="btn">Login</button>
+            <button className="bg-sky-600 px-4 py-2 rounded-lg font-semibold hover:bg-sky-700 cursor-pointer text-white">
+              Login
+            </button>
           </Link>
         )}
       </div>

@@ -41,6 +41,7 @@ const AppDetails = () => {
 
   return (
     <div className="max-w-6xl mx-auto p-5">
+      <title>App KarBar | Details</title>
       <div className="rounded-xl overflow-hidden shadow-md mb-6">
         <img
           src={app.banner}
@@ -134,6 +135,7 @@ const AppDetails = () => {
                 name="rating"
                 min="1"
                 max="5"
+                step="0.1"
                 required
                 className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
