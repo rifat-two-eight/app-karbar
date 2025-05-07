@@ -2,12 +2,13 @@ import React, { use } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "./AuthContext";
 import { GoogleAuthProvider } from "firebase/auth";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const location = useLocation();
   const { signInUser, googleLogin } = use(AuthContext);
   const navigate = useNavigate();
+
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -21,6 +22,7 @@ const Login = () => {
         toast.error(error.message);
       });
   };
+
   const handleGoogleLogin = () => {
     const googleProvider = new GoogleAuthProvider();
     googleLogin(googleProvider)
@@ -32,14 +34,15 @@ const Login = () => {
         toast.error(error.message);
       });
   };
+
   return (
     <div>
       <title>App KarBar | Login</title>
       <form
         onSubmit={handleLogin}
-        className="max-w-2xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg space-y-5"
+        className="w-[90%] sm:w-[80%] md:w-[60%] lg:w-[50%] xl:w-[40%] mx-auto my-10 p-4 sm:p-6 bg-white shadow-md rounded-lg space-y-5"
       >
-        <h2 className="text-2xl font-semibold text-center text-gray-800">
+        <h2 className="text-xl sm:text-2xl font-semibold text-center text-gray-800">
           Login to Your Account
         </h2>
 

@@ -27,7 +27,7 @@ const Register = () => {
       return;
     }
     createUser(email, password)
-      .then((res) => {
+      .then(() => {
         toast.success("Registered successful!");
         navigate("/");
       })
@@ -38,7 +38,7 @@ const Register = () => {
   const handleGoogleRegister = () => {
     const googleProvider = new GoogleAuthProvider();
     googleLogin(googleProvider)
-      .then((res) => {
+      .then(() => {
         toast.success("Registered with Google!");
         navigate("/");
       })
@@ -51,7 +51,7 @@ const Register = () => {
       <title>App KarBar | Register</title>
       <form
         onSubmit={handleRegister}
-        className="max-w-2xl mx-auto my-12 p-6 bg-white shadow-lg rounded-xl space-y-5"
+        className="w-[90%] sm:w-[80%] md:w-[60%] lg:w-[50%] xl:w-[40%] mx-auto my-10 p-4 sm:p-6 bg-white shadow-md rounded-lg space-y-5"
       >
         <h2 className="text-2xl font-bold text-center text-gray-800">
           Create Your Account

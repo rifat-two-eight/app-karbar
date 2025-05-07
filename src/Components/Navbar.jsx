@@ -29,6 +29,7 @@ const Navbar = () => {
         toast.error(error.message);
       });
   };
+
   return (
     <div className="navbar my-5">
       <div className="navbar-start">
@@ -36,18 +37,17 @@ const Navbar = () => {
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-8 w-8 -ms-2"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              {" "}
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
+              />
             </svg>
           </div>
           <ul
@@ -60,10 +60,12 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <img
             className="w-12 border-2 rounded-full border-b-orange-900"
-            src="./src/assets/app-karbar.png"
+            src="/app-karbar.png"
             alt=""
           />
-          <h2 className="text-3xl font-semibold">App KarBar</h2>
+          <h2 className="text-3xl hidden md:flex lg:flex font-semibold">
+            App KarBar
+          </h2>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -93,14 +95,14 @@ const Navbar = () => {
 
             <button
               onClick={handleSignOut}
-              className="bg-gray-600 px-4 py-2 cursor-pointer font-semibold hover:bg-gray-700 rounded-lg text-white"
+              className="bg-gray-600 me-3 lg:me-0 md:me-0 px-4 py-2 cursor-pointer font-semibold hover:bg-gray-700 rounded-lg text-white"
             >
               Sign Out
             </button>
           </div>
         ) : (
           <Link to="/login">
-            <button className="bg-sky-600 px-4 py-2 rounded-lg font-semibold hover:bg-sky-700 cursor-pointer text-white">
+            <button className="bg-sky-600 me-3 lg:me-0 md:me-0 px-4 py-2 rounded-lg font-semibold hover:bg-sky-700 cursor-pointer text-white">
               Login
             </button>
           </Link>

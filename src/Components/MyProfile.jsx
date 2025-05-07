@@ -27,7 +27,7 @@ const MyProfile = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-6 my-10 bg-white shadow-md rounded-lg">
+    <div className="max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] mx-auto p-6 my-10 bg-white shadow-md rounded-lg">
       <div className="flex flex-col items-center gap-4 mb-8">
         <title>App KarBar | Update</title>
         <img

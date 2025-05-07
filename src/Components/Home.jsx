@@ -1,5 +1,5 @@
 import Slider from "./Slider";
-import { useLoaderData } from "react-router";
+import { useLoaderData } from "react-router"; //
 import HighRated from "./HighRated";
 import Productive from "./Productive";
 import HealthCareApp from "./HealthCareApp";
@@ -13,49 +13,49 @@ const Home = () => {
   const educationalApp = apps.filter((app) => app.category === "Education");
 
   return (
-    <div>
+    <div className="max-w-7xl mx-auto px-4">
       <title>App KarBar | Home</title>
-      <Slider></Slider>
-      {/* high rating part */}
+      <Slider />
+
       <h2 className="text-center font-semibold text-3xl mt-8">Trending Apps</h2>
-      <div className="flex gap-3 mt-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 lg:gap-4 mt-5">
         {highRate.map((app) => (
-          <HighRated key={app.id} app={app}></HighRated>
-        ))}
-      </div>
-      {/* healthcare section */}
-      <h2 className="text-center font-semibold text-3xl mt-8">
-        Healthcare Apps
-      </h2>
-      <div className="flex gap-3 mt-5 justify-center">
-        {HealthApp.map((app) => (
-          <HealthCareApp key={app.id} app={app}></HealthCareApp>
-        ))}
-      </div>
-      {/* productivity section */}
-      <h2 className="text-center font-semibold text-3xl mt-8">
-        Productivity Apps
-      </h2>
-      <div className="flex gap-3 mt-5 justify-center">
-        {ProductivityApp.map((app) => (
-          <Productive key={app.id} app={app}></Productive>
+          <HighRated key={app.id} app={app} />
         ))}
       </div>
 
-      {/* education section */}
-      <h2 className="text-center font-semibold text-3xl mt-8">
-        Educational Apps
+      <h2 className="text-center font-semibold text-3xl mt-12">
+        Healthcare Apps
       </h2>
-      <div className="flex gap-3 mt-5 justify-center">
-        {educationalApp.map((app) => (
-          <Edu key={app.id} app={app}></Edu>
+      <div className="grid grid-cols-1 lg:flex justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 lg:gap-4 mt-5">
+        {HealthApp.map((app) => (
+          <HealthCareApp key={app.id} app={app} />
         ))}
       </div>
-      {/* extra section */}
-      <h2 className="text-center font-semibold text-3xl mt-8 mb-4">
+
+      <h2 className="text-center font-semibold text-3xl mt-12">
+        Productivity Apps
+      </h2>
+      <div className="grid lg:flex justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 lg:gap-4 mt-5">
+        {ProductivityApp.map((app) => (
+          <Productive key={app.id} app={app} />
+        ))}
+      </div>
+
+      <h2 className="text-center font-semibold text-3xl mt-12">
+        Educational Apps
+      </h2>
+      <div className="grid lg:flex justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 lg:gap-4 mt-5">
+        {educationalApp.map((app) => (
+          <Edu key={app.id} app={app} />
+        ))}
+      </div>
+
+      <h2 className="text-center font-semibold text-3xl mt-12 mb-4">
         FAQ About It
       </h2>
 
+      {/* Keeping your original FAQ code */}
       <div className="flex flex-col gap-3 mb-10">
         <div className="collapse collapse-plus bg-base-100 border border-base-300">
           <input type="radio" name="my-accordion-3" />
