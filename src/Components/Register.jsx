@@ -1,10 +1,27 @@
-import React from "react";
+import React, { use } from "react";
 import { Link } from "react-router";
+import { AuthContext } from "./AuthContext";
 
 const Register = () => {
+  const { createUser } = use(AuthContext);
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    createUser(email, password)
+      .then((res) => {
+        console.log(res.user);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   return (
     <div>
-      <form className="max-w-sm mx-auto my-12 p-6 bg-white shadow-lg rounded-xl space-y-5">
+      <form
+        onSubmit={handleRegister}
+        className="max-w-2xl mx-auto my-12 p-6 bg-white shadow-lg rounded-xl space-y-5"
+      >
         <h2 className="text-2xl font-bold text-center text-gray-800">
           Create Your Account
         </h2>

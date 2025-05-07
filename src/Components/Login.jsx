@@ -1,10 +1,27 @@
-import React from "react";
+import React, { use } from "react";
 import { Link } from "react-router";
+import { AuthContext } from "./AuthContext";
 
 const Login = () => {
+  const { signInUser } = use(AuthContext);
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    signInUser(email, password)
+      .then((res) => {
+        console.log(res.user);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   return (
     <div>
-      <form className="max-w-sm mx-auto my-10 p-6 bg-white shadow-md rounded-lg space-y-5">
+      <form
+        onSubmit={handleLogin}
+        className="max-w-2xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg space-y-5"
+      >
         <h2 className="text-2xl font-semibold text-center text-gray-800">
           Login to Your Account
         </h2>
