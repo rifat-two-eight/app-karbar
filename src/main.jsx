@@ -19,10 +19,10 @@ const router = createBrowserRouter([
     Component: Root,
 
     children: [
-      { index: true, Component: Home, loader: () => fetch("api.json") },
+      { index: true, Component: Home, loader: () => fetch("/api.json") },
       {
         path: "/appdetails/:id",
-        loader: () => fetch("api.json"),
+        loader: () => fetch("/api.json"),
         element: (
           <PrivateRoute>
             <AppDetails></AppDetails>
