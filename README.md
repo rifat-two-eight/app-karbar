@@ -1,4 +1,4 @@
-# Mission-9
+# App Karbar
 
 A modern web application built with React, Firebase, and Tailwind CSS that demonstrates authentication, protected routing, dynamic app data, and user interactivity.
 
@@ -6,7 +6,7 @@ A modern web application built with React, Firebase, and Tailwind CSS that demon
 
 ## Project Purpose
 
-The purpose of **Mission-9** is to showcase a full-stack web application that includes:
+The purpose of **App Karbar** is to showcase a full-stack web application that includes:
 
 - Firebase authentication
 - Protected routes (e.g., App Details, Profile)
